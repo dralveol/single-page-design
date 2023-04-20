@@ -1,0 +1,27 @@
+@mixin HeadingL{
+	font-size: 3.11rem;
+	font-weight: 700;
+	line-height: 4rem;
+	letter-spacing: 0;
+}
+
+@mixin HeadingM {
+	font-size: 2.22rem;
+	font-weight: 700;
+	line-height: 2.77rem;
+	letter-spacing: 0;
+}
+
+@mixin HeadingS {
+		font-size: 1.77rem;
+		font-weight: 700;
+		line-height: 2.22rem;
+		letter-spacing: 0;
+}
+
+@mixin Body{
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.55rem;
+	letter-spacing: 0;
+}

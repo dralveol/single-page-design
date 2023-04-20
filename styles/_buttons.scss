@@ -1,0 +1,40 @@
+.btn {
+	padding: .77rem 2.5rem;
+	color: $Light-Cream;
+	border: none;
+	outline: none;
+	border-radius: 28px;
+	cursor: pointer;
+	font-family: $Basic-font;
+	font-weight: 700;
+}
+.btn-1 {
+	@extend .btn;
+	background-color: $Black;
+	&:hover {
+		background-color: $Galactic-Blue;
+	}
+}
+
+.btn-2 {
+	@extend .btn;
+	background-color: $Light-Red;
+	&:hover {
+		background-color: $Summer-Yellow;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.btn-1 {
+		height: 56px;
+	}
+}
+
+.arrows {
+	border-radius: 50%;
+	padding: 1.33rem;
+	background-color: $Black;
+	&:hover {
+		background-color: $Galactic-Blue;
+	}
+}

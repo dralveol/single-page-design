@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./styles/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Single-page design portfolio</title>
+</head>
+<body>
+  <header class="header-banner">
+    <img class="header-banner__logo" src="./assets/logo.svg" alt="Logo">
+    <button class="header-banner__button btn-1">Free consultation</button>
+  </header>
+  
+  <main class="main-content">
+
+    <section class="main-content__description section-description">
+      <h1 class="section-description__heading">Design solutions made easy</h1>
+      <p class="section-description__body">With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
+    </section>
+  
+    <div class="main-content__skills-grid skills-grid">
+      <div class="skills-grid__graphic-cell cell">
+        <p class="skill">Graphic Design</p>
+        <img src="./assets/pattern-graphic-design.svg" class="pattern" alt="Graphic design pattern">
+      </div>
+      <div class="skills-grid__ui-ux-cell cell">
+        <p class="skill">UI/UX</p>
+        <img src="./assets/pattern-ui-ux.svg" class="pattern" alt="">
+      </div>
+      <div class="skills-grid__apps-cell cell">
+        <p class="skill">Apps</p>
+        <img src="./assets/pattern-apps.svg" class="pattern" alt="">
+      </div>
+      <div class="skills-grid__illustrations-cell cell">
+        <p class="skill">Illustrations</p>
+        <img src="./assets/pattern-illustrations.svg" class="pattern" alt="">
+      </div>
+      <div class="skills-grid__photography-cell cell">
+        <p class="skill">Photography</p>
+        <img src="./assets/pattern-photography.svg" class="pattern" alt="">
+    </div>
+      <div class="skills-grid__motion-graphics-cell cell">
+        <p class="skill">Motion Graphics</p>
+        <img src="./assets/pattern-motion-graphics.svg" class="pattern" alt="">
+      </div>
+    </div>
+  
+    <section class="main-content__hero-section hero-section">
+      <img class="hero-section__img" src="./assets/image-amy.webp" alt="Amy">
+      <div class="hero-section__description hero-description">
+        <h2 class="hero-description__title">I’m Amy, and I’d love to work on your next project</h2>
+        <p class="hero-description__body">I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!</p>
+        <button class="hero-description__button btn-2">Free Consultation</button>  
+      </div>
+    </section>
+
+    <section class="main-content__work-section work-section">
+      <h2 class="work-section__title">My Work</h2>
+      <div class="work-section__slider slider">
+        <img src="./assets/image-slide-1.jpg" alt="">
+        <img src="./assets/image-slide-2.jpg" alt="">
+        <img src="./assets/image-slide-3.jpg" alt="">
+        <img src="./assets/image-slide-4.jpg" alt="">
+        <img src="./assets/image-slide-5.jpg" alt="">
+      </div>
+      <div class="work-section__controllers controllers">
+        <div class="controllers__left arrows" id="left">
+          <img src="./assets/icon-arrow-left.svg" alt="">
+        </div>
+        <div class="controllers__right arrows" id="right">
+          <img src="./assets/icon-arrow-right.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  Book a call with me
+
+  I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a 
+  free consultation. Then we can move forward from there.
+
+  Free Consultation
+
+  Free Consultation
+  <script src="./scripts/carousel.js"></script>
+</body>
+</html>
