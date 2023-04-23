@@ -21,13 +21,14 @@ body {
 
 /*Style the header Banner*/
 
-.header-banner {
+.banner {
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
 }
-.header-banner__logo {
+.banner__logo {
 	width: 48px;
+	height: 48px;
 }
 
 
@@ -233,7 +234,6 @@ body {
 }
 
 
-
 @media only screen and (min-width: 700px) {
 	:root {
 		--image-width: 540px;
@@ -315,8 +315,9 @@ body {
 	body {
 		padding: 2rem 9.11rem;
 	}
-	.header-banner__logo {
+	.banner__logo {
 		width: 64px;
+		height: 64px;
 	}
 	.section-description__heading {
 		@include HeadingL;
