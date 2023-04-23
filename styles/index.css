@@ -91,11 +91,19 @@ table {
   background-color: #755CDE;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #FFF7F0;
   font-family: "Plus Jakarta Sans", sans-serif;
   padding: 1rem;
   overflow-x: hidden;
+}
+
+:root {
+  --image-width: 270px;
 }
 
 /*Style the header Banner*/
@@ -150,6 +158,7 @@ body {
   grid-template-columns: 1fr 1fr;
   column-gap: 1.33rem;
   grid-row-gap: 1.33rem;
+  max-width: 100%;
 }
 
 .cell {
@@ -159,6 +168,7 @@ body {
   justify-content: space-between;
 }
 .cell .pattern {
+  width: 100%;
   align-self: flex-start;
 }
 .cell .skill {
@@ -274,15 +284,19 @@ body {
 
 .work-section__slider {
   margin: 1.77rem 0;
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
 }
 .work-section__slider img {
-  width: 65vw;
-  transform: translateX(130vw);
+  width: var(--image-width);
+  transform: translateX(0);
   transition: transform 0.8s ease-in;
   margin-left: 1rem;
   border-radius: 12px;
+}
+.work-section__slider .work-section__slider:first-child {
+  margin-left: 0;
 }
 
 .controllers__left {
@@ -296,6 +310,9 @@ body {
 }
 
 @media only screen and (min-width: 700px) {
+  :root {
+    --image-width: 540px;
+  }
   body {
     padding: 2.11rem;
   }
@@ -370,9 +387,6 @@ body {
     font-weight: 700;
     line-height: 2.22rem;
     letter-spacing: 0;
-  }
-  .work-section__slider img {
-    margin: 0 2rem;
   }
 }
 @media only screen and (min-width: 1200px) {

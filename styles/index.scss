@@ -3,13 +3,20 @@
 @import "mixins";
 @import "buttons";
 
+
+html {
+	// width: 100%;
+	overflow-x: hidden;
+}
 body {
 	background-color: $Light-Cream;
 	font-family: $Basic-font;
 	padding: 1rem;
 	overflow-x: hidden;
 }
-
+:root {
+	--image-width: 270px;
+}
 
 
 /*Style the header Banner*/
@@ -59,6 +66,7 @@ body {
 	grid-template-columns: 1fr 1fr;
 	column-gap: 1.33rem;
 	grid-row-gap: 1.33rem;
+	max-width: 100%;
 }
 .cell {
 	border-radius: 8px;
@@ -66,6 +74,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	.pattern {
+		width: 100%;
 		align-self: flex-start;
 	}
 	.skill {
@@ -173,15 +182,21 @@ body {
 }
 .work-section__slider {
 	margin: 1.77rem 0;
+	width: 100%;
 	display: flex;
 	flex-wrap: nowrap;
+	// touch-action: none;
 	img {
-		width: 65vw;
-		transform: translateX(130vw);
+		width: var(--image-width);
+		transform: translateX(0);
 		transition: transform .8s ease-in;
 		margin-left: 1rem;
 		border-radius: 12px;
 	}
+	.work-section__slider:first-child{
+		margin-left:0;
+	}
+
 }
 .controllers__left {
 	margin-right: 1rem;
@@ -190,9 +205,13 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	// touch-action: none;
 }
 
 @media only screen and (min-width: 700px) {
+	:root {
+		--image-width: 540px;
+	}
 	body {
 		padding: 2.11rem;
 	}
@@ -261,7 +280,7 @@ body {
 	}
 	.work-section__slider {
 		img {
-			margin: 0 2rem;
+			// margin: 0 2rem;
 		}
 	}
 }
