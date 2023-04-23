@@ -309,6 +309,38 @@ body {
   align-items: center;
 }
 
+/*Footer Section*/
+.footer__contact-section {
+  padding: 2.7rem 1.33rem;
+  margin-top: 5.55rem;
+  margin-bottom: 2.22rem;
+}
+
+.contact-section {
+  text-align: center;
+  background-color: #030303;
+  border-radius: 10px;
+}
+
+.contact-section__wrapper {
+  color: #FFF7F0;
+}
+
+.contact-section__title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0;
+}
+
+.contact-section__description {
+  margin: 1.33rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.55rem;
+  letter-spacing: 0;
+}
+
 @media only screen and (min-width: 700px) {
   :root {
     --image-width: 540px;
@@ -433,6 +465,18 @@ body {
   /*Hero section*/
   .hero-section .hero-section__img {
     margin-left: 0;
+  }
+  .footer__contact-section {
+    padding: 4.44rem 3.61rem;
+  }
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  .contact-section__wrapper {
+    width: 40%;
   }
 }
 
